@@ -168,6 +168,11 @@ src/CMakeFiles/create_image_browser.dir/main.cc.o: \
  /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h \
  /home/ta/Desktop/Image-Browser/include/homework_3.h \
  /home/ta/Desktop/Image-Browser/include/api/html_writer.hpp \
  /usr/include/c++/11/iostream \

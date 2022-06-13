@@ -1,5 +1,7 @@
 // Header Files
 #include <filesystem>
+#include <map>
+#include <sstream>
 #include "homework_3.h"
 
 int main()
@@ -14,17 +16,26 @@ int main()
     const std::string kFilePath = "../web_app/data/";
 
     const std::filesystem::path data_directory{kFilePath};
-    std::vector<std::string> image_file_list;
+    std::map<int, std::string> image_file_map;
     for (const auto &entry : std::filesystem::directory_iterator(data_directory))
     {
         std::string file_name = entry.path().filename().string();
-        std::string extension = file_name.substr(file_name.find_last_of("."));
+        std::stringstream image_file_stream(file_name);
+        int int_file_name;
+        std::string extension;
+        image_file_stream >> int_file_name >> extension;
         if ((extension != kExtensionPNG) && (extension != kExtensionJPG))
         {
             std::cerr << "Data Files are of incorrect type." << std::endl;
             return 1;
         }
-        image_file_list.push_back(kFilePath + file_name);
+        image_file_map[int_file_name] = "./data/" + file_name;
+    }
+
+    std::vector<std::string> image_file_list;
+    for (const auto &[key, value] : image_file_map)
+    {
+        image_file_list.emplace_back(value);
     }
 
     std::vector<float> score;

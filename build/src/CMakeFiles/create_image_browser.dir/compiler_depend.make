@@ -216,6 +216,12 @@ src/CMakeFiles/create_image_browser.dir/main.cc.o: ../src/main.cc \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../include/homework_3.h \
   ../include/api/html_writer.hpp \
   /usr/include/c++/11/iostream \
@@ -240,6 +246,10 @@ src/CMakeFiles/create_image_browser.dir/main.cc.o: ../src/main.cc \
 ../include/api/html_writer.hpp:
 
 ../include/homework_3.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/c++/11/bits/stl_map.h:
 
 /usr/include/c++/11/bits/fs_ops.h:
 
@@ -353,6 +363,8 @@ src/CMakeFiles/create_image_browser.dir/main.cc.o: ../src/main.cc \
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
+/usr/include/c++/11/map:
+
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/c++/11/stdexcept:
@@ -372,6 +384,8 @@ src/CMakeFiles/create_image_browser.dir/main.cc.o: ../src/main.cc \
 /usr/include/c++/11/bits/nested_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/c++/11/tuple:
 
@@ -433,6 +447,8 @@ src/CMakeFiles/create_image_browser.dir/main.cc.o: ../src/main.cc \
 
 /usr/include/c++/11/cerrno:
 
+/usr/include/c++/11/bits/stl_multimap.h:
+
 /usr/include/features.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
@@ -448,6 +464,8 @@ src/CMakeFiles/create_image_browser.dir/main.cc.o: ../src/main.cc \
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
