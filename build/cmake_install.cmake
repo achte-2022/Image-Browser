@@ -63,6 +63,30 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "/home/ta/Desktop/Image-Browser/install" TYPE DIRECTORY FILES "/home/ta/Desktop/Image-Browser/include")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/install/bin/main" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/install/bin/main")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/install/bin/main"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/ta/Desktop/Image-Browser/install/bin/main")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/ta/Desktop/Image-Browser/install/bin" TYPE EXECUTABLE FILES "/home/ta/Desktop/Image-Browser/build/src/main")
+  if(EXISTS "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/install/bin/main" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/install/bin/main")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/install/bin/main")
+    endif()
+  endif()
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

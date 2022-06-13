@@ -11,6 +11,7 @@ add_subdirectory(src)
 
 target_link_libraries(main html_writer)
 
-install(TARGETS html_writer)
 
+install(TARGETS html_writer)
 install(DIRECTORY include DESTINATION ${CMAKE_INSTALL_PREFIX})
+install(TARGETS main DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
