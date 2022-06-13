@@ -13,6 +13,41 @@ To Run:
 git clone 
 cd Image-Browser
 bash install.sh
-./bin/create_image_browser > web_app/image_browser.html
-xdg-open web_app/image_browser.html
+bash create_browser.sh
+xdg-open ./web_app/image_browser.html
 ```
+
+install.sh
+
+```sh
+#Tejas Acharya
+# @achte_te
+#!/usr/bin/env bash
+echo "Running install.sh"
+
+cd install && rm -rf *
+cd ..
+cd bin && rm -rf *
+cd ..
+cd build && rm -rf *
+cmake ..
+make
+make install
+cd ..
+```
+
+create_browser.sh
+
+```sh
+#Tejas Acharya
+# @achte_te
+#!/usr/bin/env bash
+echo "Running create_browser.sh"
+
+cd bin
+./create_browser > ../web_app/image_browser.html
+cd ..
+```
+
+HTML Page:
+![Page](./web_app/page.png)

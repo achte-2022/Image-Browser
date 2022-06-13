@@ -19,7 +19,7 @@ int main()
     {
         std::string file_name = entry.path().filename().string();
         std::string extension = file_name.substr(file_name.find_last_of("."));
-        if ((extension != kExtensionPNG) || (extension != kExtensionJPG))
+        if ((extension != kExtensionPNG) && (extension != kExtensionJPG))
         {
             std::cerr << "Data Files are of incorrect type." << std::endl;
             return 1;
