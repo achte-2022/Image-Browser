@@ -7,7 +7,6 @@
 
 #include <string>
 #include <iostream>
-#include <sstream>
 #include <iomanip>
 
 namespace html_writer

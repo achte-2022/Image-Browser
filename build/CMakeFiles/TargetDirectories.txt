@@ -5,6 +5,7 @@
 /home/ta/Desktop/Image-Browser/build/CMakeFiles/install/local.dir
 /home/ta/Desktop/Image-Browser/build/CMakeFiles/install/strip.dir
 /home/ta/Desktop/Image-Browser/build/src/CMakeFiles/html_writer.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/image_browser.dir
 /home/ta/Desktop/Image-Browser/build/src/CMakeFiles/main.dir
 /home/ta/Desktop/Image-Browser/build/src/CMakeFiles/edit_cache.dir
 /home/ta/Desktop/Image-Browser/build/src/CMakeFiles/rebuild_cache.dir

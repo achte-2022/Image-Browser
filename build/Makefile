@@ -175,6 +175,19 @@ html_writer/fast:
 .PHONY : html_writer/fast
 
 #=============================================================================
+# Target rules for targets named image_browser
+
+# Build rule for target.
+image_browser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 image_browser
+.PHONY : image_browser
+
+# fast build rule for target.
+image_browser/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/build
+.PHONY : image_browser/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -200,6 +213,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... html_writer"
+	@echo "... image_browser"
 	@echo "... main"
 .PHONY : help
 

@@ -176,6 +176,20 @@ html_writer/fast:
 .PHONY : html_writer/fast
 
 # Convenience name for target.
+src/CMakeFiles/image_browser.dir/rule:
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/image_browser.dir/rule
+.PHONY : src/CMakeFiles/image_browser.dir/rule
+
+# Convenience name for target.
+image_browser: src/CMakeFiles/image_browser.dir/rule
+.PHONY : image_browser
+
+# fast build rule for target.
+image_browser/fast:
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/build
+.PHONY : image_browser/fast
+
+# Convenience name for target.
 src/CMakeFiles/main.dir/rule:
 	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
 .PHONY : src/CMakeFiles/main.dir/rule
@@ -195,6 +209,7 @@ html_writer.o: html_writer.cc.o
 # target to build an object file
 html_writer.cc.o:
 	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/html_writer.dir/build.make src/CMakeFiles/html_writer.dir/html_writer.cc.o
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/html_writer.cc.o
 .PHONY : html_writer.cc.o
 
 html_writer.i: html_writer.cc.i
@@ -203,6 +218,7 @@ html_writer.i: html_writer.cc.i
 # target to preprocess a source file
 html_writer.cc.i:
 	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/html_writer.dir/build.make src/CMakeFiles/html_writer.dir/html_writer.cc.i
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/html_writer.cc.i
 .PHONY : html_writer.cc.i
 
 html_writer.s: html_writer.cc.s
@@ -211,7 +227,32 @@ html_writer.s: html_writer.cc.s
 # target to generate assembly for a file
 html_writer.cc.s:
 	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/html_writer.dir/build.make src/CMakeFiles/html_writer.dir/html_writer.cc.s
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/html_writer.cc.s
 .PHONY : html_writer.cc.s
+
+image_browser.o: image_browser.cc.o
+.PHONY : image_browser.o
+
+# target to build an object file
+image_browser.cc.o:
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/image_browser.cc.o
+.PHONY : image_browser.cc.o
+
+image_browser.i: image_browser.cc.i
+.PHONY : image_browser.i
+
+# target to preprocess a source file
+image_browser.cc.i:
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/image_browser.cc.i
+.PHONY : image_browser.cc.i
+
+image_browser.s: image_browser.cc.s
+.PHONY : image_browser.s
+
+# target to generate assembly for a file
+image_browser.cc.s:
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/image_browser.cc.s
+.PHONY : image_browser.cc.s
 
 main.o: main.cc.o
 .PHONY : main.o
@@ -250,10 +291,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... html_writer"
+	@echo "... image_browser"
 	@echo "... main"
 	@echo "... html_writer.o"
 	@echo "... html_writer.i"
 	@echo "... html_writer.s"
+	@echo "... image_browser.o"
+	@echo "... image_browser.i"
+	@echo "... image_browser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

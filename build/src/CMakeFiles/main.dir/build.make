@@ -92,7 +92,7 @@ main_EXTERNAL_OBJECTS =
 
 src/main: src/CMakeFiles/main.dir/main.cc.o
 src/main: src/CMakeFiles/main.dir/build.make
-src/main: src/libhtml_writer.a
+src/main: src/libimage_browser.a
 src/main: src/CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ta/Desktop/Image-Browser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
 	cd /home/ta/Desktop/Image-Browser/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

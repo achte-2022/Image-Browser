@@ -1,4 +1,4 @@
-src/CMakeFiles/html_writer.dir/html_writer.cc.o: \
+src/CMakeFiles/image_browser.dir/html_writer.cc.o: \
  /home/ta/Desktop/Image-Browser/src/html_writer.cc \
  /usr/include/stdc-predef.h \
  /home/ta/Desktop/Image-Browser/include/homework_3.h \

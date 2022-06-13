@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ta/Desktop/Image-Browser/src/main.cc" "src/CMakeFiles/main.dir/main.cc.o" "gcc" "src/CMakeFiles/main.dir/main.cc.o.d"
+  "/home/ta/Desktop/Image-Browser/src/html_writer.cc" "src/CMakeFiles/image_browser.dir/html_writer.cc.o" "gcc" "src/CMakeFiles/image_browser.dir/html_writer.cc.o.d"
+  "/home/ta/Desktop/Image-Browser/src/image_browser.cc" "src/CMakeFiles/image_browser.dir/image_browser.cc.o" "gcc" "src/CMakeFiles/image_browser.dir/image_browser.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/image_browser.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

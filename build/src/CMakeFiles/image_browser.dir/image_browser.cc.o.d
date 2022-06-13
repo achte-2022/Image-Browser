@@ -1,8 +1,8 @@
-src/CMakeFiles/html_writer.dir/html_writer.cc.o: \
- /home/ta/Desktop/Image-Browser/src/html_writer.cc \
+src/CMakeFiles/image_browser.dir/image_browser.cc.o: \
+ /home/ta/Desktop/Image-Browser/src/image_browser.cc \
  /usr/include/stdc-predef.h \
- /home/ta/Desktop/Image-Browser/include/homework_3.h \
- /home/ta/Desktop/Image-Browser/include/api/html_writer.hpp \
+ /home/ta/Desktop/Image-Browser/src/../include/homework_3.h \
+ /home/ta/Desktop/Image-Browser/src/../include/api/html_writer.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -165,7 +165,7 @@ src/CMakeFiles/html_writer.dir/html_writer.cc.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/ta/Desktop/Image-Browser/include/api/image_browser.hpp \
+ /home/ta/Desktop/Image-Browser/src/../include/api/image_browser.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \

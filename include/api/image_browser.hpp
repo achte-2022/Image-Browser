@@ -25,7 +25,7 @@ using ImageRow = std::array<ScoredImage, 3>;
  * @param first_row    If it's the very first row, the first image should be
  * highlighted.
  */
-void AddFullRow(const ImageRow& row, bool first_row = false);
+void AddFullRow(const ImageRow& row, bool first_row);
 
 /**
  * @brief Create a Image Browser application, This function should be completely

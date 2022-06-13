@@ -1,45 +1,45 @@
+// Header Files
+#include <filesystem>
 #include "homework_3.h"
 
 int main()
 {
-    const std::string kTitle = "Image Browser";
-    const std::string kFilePath = "./data/";
-    const std::string kExtension = ".png";
-    const std::string kCssStylesheet = "./style.css";
     const int kNumRows = 3;
     const int kNumCols = 3;
-    const int kNumImages = kNumRows * kNumCols;
-    std::string image_file[kNumImages];
-    for (int i = 0; i < kNumImages; i++)
+
+    const std::string kTitle = "Image Browser";
+    const std::string kExtension = ".png";
+    const std::string kCssStylesheet = "./style.css";
+    const std::string kFilePath = "../../web_app/data/";
+
+    const std::filesystem::path data_directory{kFilePath};
+    std::vector<std::string> image_file_list;
+    for (auto &entry : std::filesystem::directory_iterator(data_directory))
     {
-        image_file[i] = kFilePath + "000" + std::to_string(i) + "00" + kExtension;
+        std::cout << entry << std::endl;
+        // image_file_list.push_back(entry);
     }
 
-    // Actual Browser Creation
-    html_writer::OpenDocument();
-    html_writer::AddTitle(kTitle);
-    html_writer::AddCSSStyle(kCssStylesheet);
-    html_writer::OpenBody();
-    int img_count = 0;
-    bool highlight;
-    float score = 0;
-    for (int i = 0; i < kNumRows; i++)
-    {
-        html_writer::OpenRow();
-        for (int j = 0; j < kNumCols; j++)
-        {
-            highlight = false;
-            if (img_count == 0)
-            {
-                highlight = true;
-            }
-            score = img_count * 0.5346;
-            html_writer::AddImage(image_file[img_count], score, highlight);
-            img_count++;
-        }
-        html_writer::CloseRow();
-    }
-    html_writer::CloseBody();
-    html_writer::CloseDocument();
+    // std::vector<float> score;
+    // for (int i = 0; i < image_file_list.size(); i++)
+    // {
+    //     score.push_back(i * 0.6);
+    // }
+
+    // int image_index = 0;
+    // std::vector<image_browser::ImageRow> rows;
+    // for (int i = 0; i < kNumRows; i++)
+    // {
+    //     image_browser::ImageRow row;
+    //     for (int j = 0; j < row.size(); j++)
+    //     {
+    //         image_browser::ScoredImage image = {image_file_list[image_index], score[image_index]};
+    //         row[j] = image;
+    //         image_index++;
+    //     }
+    //     rows.push_back(row);
+    // }
+    // // Actual Browser Creation
+    // image_browser::CreateImageBrowser(kTitle, kCssStylesheet, rows);
     return 0;
 }
