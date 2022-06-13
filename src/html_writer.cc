@@ -69,16 +69,6 @@ void html_writer::AddImage(const std::string &img_path, float score, bool highli
     }
     std::string src = "\"" + img_path + "\" ";
 
-    // int file_name;
-    // std::string extension;
-    // std::string file_path;
-    // std::stringstream file_stream{img_path};
-    // file_stream >> file_path >> file_name >> extension;
-    // std::cerr << file_path << std::endl;
-    // std::cerr << file_name << std::endl;
-    // std::cerr << extension << std::endl;
-    // std::string img_title = std::to_string(file_name) + extension;
-
     std::string img_title = img_path.substr(img_path.find_last_of("/\\") + 1);
 
     std::cout << "<h2>" << img_title << "</h2>" << std::endl;

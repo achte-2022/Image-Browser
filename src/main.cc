@@ -41,5 +41,5 @@ int main()
     }
     html_writer::CloseBody();
     html_writer::CloseDocument();
-    return 1;
+    return 0;
 }
