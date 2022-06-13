@@ -122,5 +122,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/html_writer.dir/DependInfo.cmake"
   "src/CMakeFiles/image_browser.dir/DependInfo.cmake"
-  "src/CMakeFiles/main.dir/DependInfo.cmake"
+  "src/CMakeFiles/create_image_browser.dir/DependInfo.cmake"
   )

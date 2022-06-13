@@ -68,17 +68,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main")
+  if(EXISTS "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/bin/create_image_browser" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/bin/create_image_browser")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main"
+         FILE "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/bin/create_image_browser"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ta/Desktop/Image-Browser/build/src/main")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/ta/Desktop/Image-Browser/bin/create_image_browser")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/home/ta/Desktop/Image-Browser/bin" TYPE EXECUTABLE FILES "/home/ta/Desktop/Image-Browser/build/src/create_image_browser")
+  if(EXISTS "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/bin/create_image_browser" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/bin/create_image_browser")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/main")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/ta/Desktop/Image-Browser/bin/create_image_browser")
     endif()
   endif()
 endif()

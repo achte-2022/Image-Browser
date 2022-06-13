@@ -3,11 +3,12 @@
 #!/usr/bin/env bash
 echo "Running install.sh"
 
-cd install
-rm -rf *
+cd install && rm -rf *
 cd ..
-cd build
-rm -rf *
+cd bin && rm -rf *
+cd ..
+cd build && rm -rf *
 cmake ..
 make
 make install
+cd ..

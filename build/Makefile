@@ -188,17 +188,17 @@ image_browser/fast:
 .PHONY : image_browser/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named create_image_browser
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+create_image_browser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 create_image_browser
+.PHONY : create_image_browser
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+create_image_browser/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/build
+.PHONY : create_image_browser/fast
 
 # Help Target
 help:
@@ -212,9 +212,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... create_image_browser"
 	@echo "... html_writer"
 	@echo "... image_browser"
-	@echo "... main"
 .PHONY : help
 
 

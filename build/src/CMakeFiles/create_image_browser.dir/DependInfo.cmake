@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ta/Desktop/Image-Browser/src/main.cc" "src/CMakeFiles/main.dir/main.cc.o" "gcc" "src/CMakeFiles/main.dir/main.cc.o.d"
+  "/home/ta/Desktop/Image-Browser/src/main.cc" "src/CMakeFiles/create_image_browser.dir/main.cc.o" "gcc" "src/CMakeFiles/create_image_browser.dir/main.cc.o.d"
   )
 
 # Targets to which this target links.

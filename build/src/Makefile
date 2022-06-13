@@ -190,18 +190,18 @@ image_browser/fast:
 .PHONY : image_browser/fast
 
 # Convenience name for target.
-src/CMakeFiles/main.dir/rule:
-	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
-.PHONY : src/CMakeFiles/main.dir/rule
+src/CMakeFiles/create_image_browser.dir/rule:
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/create_image_browser.dir/rule
+.PHONY : src/CMakeFiles/create_image_browser.dir/rule
 
 # Convenience name for target.
-main: src/CMakeFiles/main.dir/rule
-.PHONY : main
+create_image_browser: src/CMakeFiles/create_image_browser.dir/rule
+.PHONY : create_image_browser
 
 # fast build rule for target.
-main/fast:
-	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+create_image_browser/fast:
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/build
+.PHONY : create_image_browser/fast
 
 html_writer.o: html_writer.cc.o
 .PHONY : html_writer.o
@@ -259,7 +259,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cc.o
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -267,7 +267,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cc.i
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -275,7 +275,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cc.s
+	cd /home/ta/Desktop/Image-Browser/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/main.cc.s
 .PHONY : main.cc.s
 
 # Help Target
@@ -290,9 +290,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... create_image_browser"
 	@echo "... html_writer"
 	@echo "... image_browser"
-	@echo "... main"
 	@echo "... html_writer.o"
 	@echo "... html_writer.i"
 	@echo "... html_writer.s"

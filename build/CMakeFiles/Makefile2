@@ -80,7 +80,7 @@ clean: src/clean
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/html_writer.dir/all
 src/all: src/CMakeFiles/image_browser.dir/all
-src/all: src/CMakeFiles/main.dir/all
+src/all: src/CMakeFiles/create_image_browser.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -90,7 +90,7 @@ src/preinstall:
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/html_writer.dir/clean
 src/clean: src/CMakeFiles/image_browser.dir/clean
-src/clean: src/CMakeFiles/main.dir/clean
+src/clean: src/CMakeFiles/create_image_browser.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -100,7 +100,7 @@ src/clean: src/CMakeFiles/main.dir/clean
 src/CMakeFiles/html_writer.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/html_writer.dir/build.make src/CMakeFiles/html_writer.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/html_writer.dir/build.make src/CMakeFiles/html_writer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ta/Desktop/Image-Browser/build/CMakeFiles --progress-num=1,2 "Built target html_writer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ta/Desktop/Image-Browser/build/CMakeFiles --progress-num=3,4 "Built target html_writer"
 .PHONY : src/CMakeFiles/html_writer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -126,7 +126,7 @@ src/CMakeFiles/html_writer.dir/clean:
 src/CMakeFiles/image_browser.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/image_browser.dir/build.make src/CMakeFiles/image_browser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ta/Desktop/Image-Browser/build/CMakeFiles --progress-num=3,4,5 "Built target image_browser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ta/Desktop/Image-Browser/build/CMakeFiles --progress-num=5,6,7 "Built target image_browser"
 .PHONY : src/CMakeFiles/image_browser.dir/all
 
 # Build rule for subdir invocation for target.
@@ -146,30 +146,30 @@ src/CMakeFiles/image_browser.dir/clean:
 .PHONY : src/CMakeFiles/image_browser.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/main.dir
+# Target rules for target src/CMakeFiles/create_image_browser.dir
 
 # All Build rule for target.
-src/CMakeFiles/main.dir/all: src/CMakeFiles/image_browser.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ta/Desktop/Image-Browser/build/CMakeFiles --progress-num=6,7 "Built target main"
-.PHONY : src/CMakeFiles/main.dir/all
+src/CMakeFiles/create_image_browser.dir/all: src/CMakeFiles/image_browser.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ta/Desktop/Image-Browser/build/CMakeFiles --progress-num=1,2 "Built target create_image_browser"
+.PHONY : src/CMakeFiles/create_image_browser.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/main.dir/rule: cmake_check_build_system
+src/CMakeFiles/create_image_browser.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ta/Desktop/Image-Browser/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/create_image_browser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ta/Desktop/Image-Browser/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/main.dir/rule
+.PHONY : src/CMakeFiles/create_image_browser.dir/rule
 
 # Convenience name for target.
-main: src/CMakeFiles/main.dir/rule
-.PHONY : main
+create_image_browser: src/CMakeFiles/create_image_browser.dir/rule
+.PHONY : create_image_browser
 
 # clean rule for target.
-src/CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/clean
-.PHONY : src/CMakeFiles/main.dir/clean
+src/CMakeFiles/create_image_browser.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/create_image_browser.dir/build.make src/CMakeFiles/create_image_browser.dir/clean
+.PHONY : src/CMakeFiles/create_image_browser.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

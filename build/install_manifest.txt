@@ -3,4 +3,4 @@
 /home/ta/Desktop/Image-Browser/install/include/homework_3.h
 /home/ta/Desktop/Image-Browser/install/include/api/html_writer.hpp
 /home/ta/Desktop/Image-Browser/install/include/api/image_browser.hpp
-/home/ta/Desktop/Image-Browser/install/bin/main
+/home/ta/Desktop/Image-Browser/bin/create_image_browser

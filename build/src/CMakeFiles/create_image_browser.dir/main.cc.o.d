@@ -1,4 +1,4 @@
-src/CMakeFiles/main.dir/main.cc.o: \
+src/CMakeFiles/create_image_browser.dir/main.cc.o: \
  /home/ta/Desktop/Image-Browser/src/main.cc /usr/include/stdc-predef.h \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/system_error \
