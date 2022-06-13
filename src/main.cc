@@ -3,7 +3,7 @@
 int main()
 {
     const std::string kTitle = "Image Browser";
-    const std::string kFilePath = "../../web_app/";
+    const std::string kFilePath = "./data/";
     const std::string kExtension = ".png";
     const std::string kCssStylesheet = kFilePath + "style.css";
     const int kNumRows = 3;
@@ -16,7 +16,7 @@ int main()
     }
 
     // Actual Browser Creation
-    html_writer::OpenBody();
+    html_writer::OpenDocument();
     html_writer::AddTitle(kTitle);
     html_writer::AddCSSStyle(kCssStylesheet);
     html_writer::OpenBody();

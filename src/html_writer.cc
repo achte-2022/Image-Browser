@@ -58,10 +58,14 @@ void html_writer::CloseRow()
 void html_writer::AddImage(const std::string &img_path, float score, bool highlight)
 {
     std::string class_ = "\"column\" ";
-    std::string style = "";
     if (highlight)
     {
-        style = "\"border: 5px solid green;\" ";
+        std::string style = "\"border: 5px solid green;\" ";
+        std::cout << "<div class=" << class_ << "style=" << style << ">" << std::endl;
+    }
+    else
+    {
+        std::cout << "<div class=" << class_ << ">" << std::endl;
     }
     std::string src = "\"" + img_path + "\" ";
 
@@ -72,10 +76,10 @@ void html_writer::AddImage(const std::string &img_path, float score, bool highli
     file_stream >> file_path >> file_name >> extension;
 
     std::string img_title = std::to_string(file_name) + extension;
-    std::cout << "<div class=" << class_ << "style=" << style << ">" << std::endl;
+
     std::cout << "<h2>" << img_title << "</h2>" << std::endl;
     std::cout << "<img src=" << src << "/>" << std::endl;
-    std::cout << "<p>score = " << score << "</p>";
+    std::cout << "<p>score = " << score << "</p>" << std::endl;
     std::cout << "</div>" << std::endl;
     return;
 }
