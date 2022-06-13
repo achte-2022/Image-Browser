@@ -5,7 +5,7 @@ int main()
     const std::string kTitle = "Image Browser";
     const std::string kFilePath = "./data/";
     const std::string kExtension = ".png";
-    const std::string kCssStylesheet = kFilePath + "style.css";
+    const std::string kCssStylesheet = "./style.css";
     const int kNumRows = 3;
     const int kNumCols = 3;
     const int kNumImages = kNumRows * kNumCols;
@@ -33,6 +33,7 @@ int main()
             {
                 highlight = true;
             }
+            score = img_count * 0.5346;
             html_writer::AddImage(image_file[img_count], score, highlight);
             img_count++;
         }
