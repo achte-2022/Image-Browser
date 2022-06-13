@@ -73,7 +73,7 @@ namespace html_writer
      * @param score     The score of the given image
      * @param highlight In case to be the very first image, this must be true.
      */
-    void AddImage(const std::string &img_path, float score, bool highlight = false);
+    void AddImage(const std::string &img_path, float score, bool highlight);
 
 } // namespace html_writer
 

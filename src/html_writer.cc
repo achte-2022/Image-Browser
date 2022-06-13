@@ -55,7 +55,7 @@ void html_writer::CloseRow()
     return;
 }
 
-void html_writer::AddImage(const std::string &img_path, float score, bool highlight = false)
+void html_writer::AddImage(const std::string &img_path, float score, bool highlight)
 {
     std::string class_ = "\"column\" ";
     std::string style = "";

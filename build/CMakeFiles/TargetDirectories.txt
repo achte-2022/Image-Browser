@@ -1,0 +1,14 @@
+/home/ta/Desktop/Image-Browser/build/CMakeFiles/edit_cache.dir
+/home/ta/Desktop/Image-Browser/build/CMakeFiles/rebuild_cache.dir
+/home/ta/Desktop/Image-Browser/build/CMakeFiles/list_install_components.dir
+/home/ta/Desktop/Image-Browser/build/CMakeFiles/install.dir
+/home/ta/Desktop/Image-Browser/build/CMakeFiles/install/local.dir
+/home/ta/Desktop/Image-Browser/build/CMakeFiles/install/strip.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/html_writer.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/main.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/edit_cache.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/rebuild_cache.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/list_install_components.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/install.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/install/local.dir
+/home/ta/Desktop/Image-Browser/build/src/CMakeFiles/install/strip.dir

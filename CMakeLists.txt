@@ -9,8 +9,8 @@ include_directories(include)
 
 add_subdirectory(src)
 
-target_link_libraries(image_browser html_writer)
+target_link_libraries(main html_writer)
 
-install(TARGETS image_browser)
+install(TARGETS html_writer)
 
 install(DIRECTORY include DESTINATION ${CMAKE_INSTALL_PREFIX})
